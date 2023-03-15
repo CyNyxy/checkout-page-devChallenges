@@ -1,0 +1,118 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+*, body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+p.item-title {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+p.item-price {
+  font-size: 14px;
+  line-height: 17px;
+  color: #F2994A;
+}
+
+p.item-old-price {
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: line-through;
+  color: #4E5150;
+}
+
+a {
+  color: #BDBDBD;
+}
+
+img {
+  border-radius: 13px;
+  width: 135px;
+  height: 135px;
+}
+
+.footer-info {
+  margin-top: 2rem;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (min-width: 660px) {
+
+}

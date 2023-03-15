@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="form.js"></script>
+  <title>Checkout Page - devChallenge</title>
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <main>
+    <form>
+      <h2>Contact information</h2>
+      <label for="email">E-mail</label>
+      <input type="email" required id="email">
+      <label for="phone">Phone</label>
+      <input type="number" required id="phone">
+      <h2>Shipping address</h2>
+      <label for="name">Full name</label>
+      <input type="text" required id="name">
+      <label for="address">Address</label>
+      <input type="text" required id="address">
+      <label for="city">City</label>
+      <input type="text" required id="city">
+      <div>
+        <label for="country">Country</label>
+        <select name="country" id="country"></select>
+        <label for="postalcode">Postal code</label>
+        <select name="postalcode" id="postalcode"></select>
+      </div>
+      <input type="checkbox">
+      <p>Save this information for next time</p>
+      <button type="submit">Continue</button>
+    </form>
+  </main>
+  <aside>
+    <div class="item-box">
+      <img src="photo1.png" alt="pic">
+      <div>
+        <p class="item-title">Vintage Backbag</p>
+        <p class="item-price">$54.99</p>
+        <p class="item-old-price">$94.99</p>
+        <div class="quantity-box">
+          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+          <input type="number" name="number" id="number" min="0" value="1">
+          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <footer>
+    <p class="footer-info">created by&nbsp;<u><b><a href="https://github.com/CyNyxy">Nyxy</a></b></u>&nbsp;- devChallenges.io</p>
+  </footer>
+</body>
+</html>
