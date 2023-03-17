@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](https://i.ibb.co/Kj0h7GF/devchallenge06.png)
+![screenshot](https://i.ibb.co/2Y7bnNn/devchallenge06.png)
 
 The solution for this challenge can be found: https://nyxy-checkout-page.netlify.app.
 
