@@ -10,7 +10,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/solutions/o9wY7TdHTqUlOKdmX8Je">
+    <a href="https://devchallenges.io/solutions/NbNTk9UkUI7bml0kfESY">
       Solution
     </a>
     <span> | </span>
@@ -41,7 +41,7 @@ The solution for this challenge can be found: https://nyxy-checkout-page.netlify
 
 - [HTML](https://www.w3schools.com)
 - [CSS](https://css-tricks.com)
-- [Javascript]
+- [Javascript](https://javascript.info)
 
 
 ## Features
@@ -61,6 +61,9 @@ This application/site was created as a submission to a [DevChallenges](https://d
 - [Hide Arrows From Input Number](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
 - [user-select property](https://css-tricks.com/almanac/properties/u/user-select/)
 - [FontAwesome and placeholders](https://codepen.io/huckbit/post/fontawesomeplaceholder)
+- [accent-color](https://web.dev/i18n/en/accent-color/)
+- [Dividers](https://www.w3schools.com/howto/howto_css_dividers.asp)
+- [::placeholder selector](https://css-tricks.com/almanac/selectors/p/placeholder/)
 
 
 ## Contact
