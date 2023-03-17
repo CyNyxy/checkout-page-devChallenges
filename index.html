@@ -11,11 +11,24 @@
   <script src="form.js"></script>
   <title>Checkout Page - devChallenge</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <script type = "text/javascript">
+        function Warn() {
+    // Get all input elements in the form
+    const inputs = document.querySelectorAll('form input');
+    // Check if all input values are filled
+    const allFilled = Array.from(inputs).every(input => input.value);
+    // If all input values are filled, display success alert
+    if (allFilled) {
+      alert("Success!");
+    }
+  }
+  </script>  
 </head>
 <body>
   <header>
     <h1>Checkout</h1>
   </header>
+  <div class="container">
   <aside>
     <div class="item-box">
       <img src="photo1.png" alt="pic">
@@ -26,9 +39,9 @@
         <p class="item-old-price">$94.99</p>
       </div>
         <div class="quantity-box">
-          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-          <input type="number" name="number" id="number" min="0" value="1">
-          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          <div class="value-button" id="decrease" onclick="decreaseValue('number1')" value="Decrease Value">-</div>
+          <input type="number" name="number1" id="number1" min="0" value="1">
+          <div class="value-button" id="increase" onclick="increaseValue('number1')" value="Increase Value">+</div>
         </div>
       </div>
     </div>
@@ -41,9 +54,9 @@
         <p class="item-old-price">$124.99</p>
       </div>
         <div class="quantity-box">
-          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-          <input type="number" name="number" id="number" min="0" value="1">
-          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+          <div class="value-button" id="decrease2" onclick="decreaseValue('number2')" value="Decrease Value">-</div>
+          <input type="number" name="number2" id="number2" min="0" value="1">
+          <div class="value-button" id="increase2" onclick="increaseValue('number2')" value="Increase Value">+</div>
         </div>
       </div>
     </div> 
@@ -88,10 +101,11 @@
         <p class="save">Save this information for next time</p>
       </div>
       <div class="button-box">
-      <button type="submit">Continue</button>
+      <button type="submit" onclick="Warn()">Continue</button>
       </div>
     </form>
   </main>
+  </div>
   <footer>
     <p class="footer-info">created by&nbsp;<u><b><a href="https://github.com/CyNyxy">Nyxy</a></b></u>&nbsp;- devChallenges.io</p>
   </footer>

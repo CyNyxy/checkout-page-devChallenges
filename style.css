@@ -18,19 +18,22 @@ body {
   font-size: 14px;
   margin-left: min(1rem, 100%);
   margin-right: min(1rem, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   font-size: 24px;
   line-height: 29px;
   color: #4E5150;
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 h2 {
   font-size: 14px;
   line-height: 17px;
-  margin-top: 2rem;
+  padding-top: 3rem;
 }
 
 p.total {
@@ -85,6 +88,7 @@ select {
   color: #828282;
   height: 40px;
   border-radius: 12px;
+  width: 100%;
 }
 
 option {
@@ -99,8 +103,10 @@ option {
 
 .last-input {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 20px;
 }
+
 
 .checkbox {
   width: auto;
@@ -131,7 +137,7 @@ button {
 }
 
 .save-box {
-  padding-block: 1rem;
+  padding-block: 2rem;
 }
 
 a {
@@ -157,8 +163,16 @@ p.save {
   padding-left: 6px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 header {
-  padding-top: 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 aside {
@@ -196,9 +210,12 @@ aside {
   justify-content: space-evenly;
 }
 
+.last-input > div {
+  width: auto;
+}
+
 form {
   width: 100%;
-  margin: 0 auto;
 }
 
 .value-button {
@@ -238,14 +255,14 @@ form #input-wrap {
   padding: 0px;
 }
 
-input#number {
+input#number1, input#number2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   text-align: center;
   border: none;
   margin: 0px;
-  width: 20px;
+  width: 25px;
   height: 20px;
   background-color: #f2f2f2;
 }
@@ -258,6 +275,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .footer-info {
@@ -269,3 +287,66 @@ input[type=number] {
   margin-block: 2rem;
 }
 
+@media screen and (min-width: 660px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 800px;
+    max-width: 90%;
+    gap: 2rem;
+  }
+  header {
+    width: 800px;
+    max-width: 90%;
+  }
+  aside {
+    height: fit-content;
+    margin-top: 3rem;
+  }
+  footer {
+    padding-top: 3rem;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  label {
+    font-size: 12px;
+  }
+  ::placeholder, select {
+    font-size: 1rem;
+    line-height: 20px;
+  }
+  input, select {
+    height: 56px;
+  }
+  hr.solid {
+    margin-block: 0.75rem;
+  }
+  p.item-title, p.item-price {
+    font-size: 1rem;
+  }
+  p.item-old-price {
+    font-size: 12px;
+  }
+  p.total {
+    font-size: 18px;
+  }
+  p.save {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .save-box {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 850px) {
+.last-input > div {
+  width: 100%;
+}
+}

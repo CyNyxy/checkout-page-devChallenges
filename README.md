@@ -32,7 +32,7 @@
 
 ## Overview
 
-![screenshot](https://i.ibb.co/hLYn0tB/devchallenge05.png)
+![screenshot](https://i.ibb.co/Kj0h7GF/devchallenge06.png)
 
 The solution for this challenge can be found: https://nyxy-checkout-page.netlify.app.
 
@@ -41,6 +41,7 @@ The solution for this challenge can be found: https://nyxy-checkout-page.netlify
 
 - [HTML](https://www.w3schools.com)
 - [CSS](https://css-tricks.com)
+- [Javascript]
 
 
 ## Features
@@ -48,6 +49,11 @@ The solution for this challenge can be found: https://nyxy-checkout-page.netlify
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the following user stories:
 
 - [x] User story: I can see a page following the given design
+- [x] User story: I can input email, phone, full name, address, city, country, and postal code
+- [x] User story: I can input the number of items
+- [x] User story: I can select at least 3 countries from the dropdown
+- [x] User story: When I click submit button or press enter, I can see a warning if validation fails
+- [x] User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 
 
 ## Acknowledgements
