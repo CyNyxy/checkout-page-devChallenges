@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://nyxy-my-gallery.netlify.app">
+    <a href="https://nyxy-checkout-page.netlify.app">
       Demo
     </a>
     <span> | </span>
@@ -34,7 +34,7 @@
 
 ![screenshot](https://i.ibb.co/hLYn0tB/devchallenge05.png)
 
-The solution for this challenge can be found: https://nyxy-my-gallery.netlify.app.
+The solution for this challenge can be found: https://nyxy-checkout-page.netlify.app.
 
 
 ### Built With
@@ -52,8 +52,9 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Acknowledgements
 
-- [A Deep Dive Into CSS Grid minmax()](https://ishadeed.com/article/css-grid-minmax/)
-- [How to create an image gallery with CSS Grid](https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/)
+- [Hide Arrows From Input Number](https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp)
+- [user-select property](https://css-tricks.com/almanac/properties/u/user-select/)
+- [FontAwesome and placeholders](https://codepen.io/huckbit/post/fontawesomeplaceholder)
 
 
 ## Contact

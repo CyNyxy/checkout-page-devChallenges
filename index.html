@@ -10,43 +10,21 @@
   <link rel="stylesheet" href="style.css">
   <script src="form.js"></script>
   <title>Checkout Page - devChallenge</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>Checkout</h1>
   </header>
-  <main>
-    <form>
-      <h2>Contact information</h2>
-      <label for="email">E-mail</label>
-      <input type="email" required id="email">
-      <label for="phone">Phone</label>
-      <input type="number" required id="phone">
-      <h2>Shipping address</h2>
-      <label for="name">Full name</label>
-      <input type="text" required id="name">
-      <label for="address">Address</label>
-      <input type="text" required id="address">
-      <label for="city">City</label>
-      <input type="text" required id="city">
-      <div>
-        <label for="country">Country</label>
-        <select name="country" id="country"></select>
-        <label for="postalcode">Postal code</label>
-        <select name="postalcode" id="postalcode"></select>
-      </div>
-      <input type="checkbox">
-      <p>Save this information for next time</p>
-      <button type="submit">Continue</button>
-    </form>
-  </main>
   <aside>
     <div class="item-box">
       <img src="photo1.png" alt="pic">
-      <div>
+      <div class="price-box">
+        <div class="item-header">
         <p class="item-title">Vintage Backbag</p>
         <p class="item-price">$54.99</p>
         <p class="item-old-price">$94.99</p>
+      </div>
         <div class="quantity-box">
           <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
           <input type="number" name="number" id="number" min="0" value="1">
@@ -54,7 +32,66 @@
         </div>
       </div>
     </div>
+    <div class="item-box">
+      <img src="photo2.png" alt="pic">
+      <div class="price-box">
+        <div class="item-header">
+        <p class="item-title">Levi Shoes</p>
+        <p class="item-price">$74.99</p>
+        <p class="item-old-price">$124.99</p>
+      </div>
+        <div class="quantity-box">
+          <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+          <input type="number" name="number" id="number" min="0" value="1">
+          <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+        </div>
+      </div>
+    </div> 
+    <div class="checkout-box">
+      <hr class="solid">
+      <p class="total">Shipping</p><p class="price-right">$19</p>
+      <hr class="solid">
+      <p class="total">Total</p><p class="price-right">$148.99</p>
+    </div>
   </aside>
+  <main>
+    <form>
+      <h2>Contact information</h2>
+      <label for="email">E-mail</label>
+      <input type="email" required id="email" class="fontawesome" placeholder="&#xf0e0;&nbsp;&nbsp;&nbsp;&nbsp;Enter your e-mail..."/>
+      <label for="phone">Phone</label>
+      <input type="number" required id="phone" class="fontawesome" placeholder="&#xf879;&nbsp;&nbsp;&nbsp;Enter your phone...">
+      <h2>Shipping address</h2>
+      <label for="name">Full name</label>
+      <input type="text" required id="name" class="fontawesome" placeholder="&#xf007;&nbsp;&nbsp;&nbsp;Enter your full name...">
+      <label for="address">Address</label>
+      <input type="text" required id="address" class="fontawesome" placeholder="&#xf015;&nbsp;&nbsp;&nbsp;Your address...">
+      <label for="city">City</label>
+      <input type="text" required id="city" class="fontawesome" placeholder="&#xf1ad;&nbsp;&nbsp;&nbsp;Your city...">
+      <div class="last-input">
+        <div>
+          <label for="country">Country</label>
+          <select name="country" id="country" class="fontawesome" required>
+            <option value="" disabled selected hidden>&#xf0ac;&nbsp;&nbsp;&nbsp;Your country</option>
+            <option value="Spain">Spain</option>
+            <option value="France">France</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </div>
+        <div>
+          <label for="postalcode">Postal code</label>
+          <input name="postalcode" class="fontawesome" id="postalcode" placeholder="&#xf01c;&nbsp;&nbsp;&nbsp;Your postal code">
+        </div>
+      </div>
+      <div class="save-box">
+        <input type="checkbox" class="checkbox">
+        <p class="save">Save this information for next time</p>
+      </div>
+      <div class="button-box">
+      <button type="submit">Continue</button>
+      </div>
+    </form>
+  </main>
   <footer>
     <p class="footer-info">created by&nbsp;<u><b><a href="https://github.com/CyNyxy">Nyxy</a></b></u>&nbsp;- devChallenges.io</p>
   </footer>
